@@ -1,0 +1,13 @@
+body {
+    background-color: lightblue;
+}
+
+.jumbotron {
+    background-color: wheat;
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+table {
+    width: 100%;
+}
