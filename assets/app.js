@@ -51,12 +51,11 @@ database.ref().on("child_added", function (snapshot) {
     console.log(sv.frequency);
 
     // Change the HTML to reflect
-// $(".table-striped").append("<tr><td> " +
-//     snapshot.val().name +
-//     " </td><td> " + snapshot.val().role +
-//     " </td><td> " + snapshot.val().startDate +
-//     " </td><td> " + monthsSince + " </td><td> " + snapshot.val().monthlyRate +
-//     " </td><td> " + billedAmount + " </td>");
+$(".tableArea").append("<tr><td> " + sv.name +
+    " </td><td> " + sv.destination +
+    " </td><td> " + sv.frequency +
+    " </td><td> " + sv.time +
+    " </td><td> " + "minutes away" + " </td>");     //need minutes away calc.
 
 // Handle the errors
 }, function (errorObject) {
